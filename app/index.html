@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda en Línea</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tienda en Línea</h1>
+        
+        <!-- Inicio de Sesión del Administrador -->
+        <div class="admin-login">
+            <input type="password" id="admin-password" placeholder="Contraseña de Administrador" required>
+            <button id="login-button">Iniciar Sesión</button>
+        </div>
+
+        <!-- Formulario para añadir nuevos productos -->
+        <div class="add-product">
+            <button id="toggle-form-button" style="display: none;">Desactivar Añadir Producto</button>
+            <h2>Añadir Producto</h2>
+            <input type="text" id="product-name" placeholder="Nombre del Producto" required>
+            <input type="number" id="product-price" placeholder="Precio en S/" required>
+            <input type="text" id="product-img" placeholder="URL de la Imagen" required>
+            <button id="add-product-button">Añadir Producto</button>
+        </div>
+
+        <div class="products" id="products"></div>
+        <div class="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <button id="buy-button">Comprar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
